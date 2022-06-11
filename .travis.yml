@@ -10,3 +10,5 @@ before_install:
 
 script:
   - docker run -e CI=true marjugoncalves/react-end-to-end-pipeline npm run test
+
+#test
