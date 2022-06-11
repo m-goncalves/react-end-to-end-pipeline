@@ -9,6 +9,6 @@ before_install:
   - docker build -t marjugoncalves/react-end-to-end-pipeline -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true marjugoncalves/react-end-to-end-pipeline npm run test
+  - docker run -e CI=true marjugoncalves/react-end-to-end-pipeline npm run test -- --coverage
 
 #test
